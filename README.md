@@ -5,15 +5,13 @@ This repo is made together with this explanation video:(click on it)
 
 [![YoutubeVideo](https://img.youtube.com/vi/NXKzFG61lNs/0.jpg)](https://www.youtube.com/watch?v=NXKzFG61lNs)
 
-It is possible to update the Firmware of the Xiaomi Thermometer OTA with this WEB Tool i wrote:
-https://atc1441.github.io/TelinkFlasher.html
+It is possible to update the Firmware of the Xiaomi Thermometer OTA with this WEB Tool:
+https://jason2866.github.io
 
 The web flasher does work for many devices that uses the Telink TLSR82** MCUs and it can also be used to reflash the Stock firmware back to the device.
 
-### You can support my work via PayPal: https://paypal.me/hoverboard1 this keeps projects like this coming.
+### You can support this work from @atc1441 via PayPal: https://paypal.me/hoverboard1
 
-Tutorial in spanish: https://domoticaencasa.es/tutorial-custom-firmware-termohigrometro-xiaomi-lywsd03mmc
-Thanks to Eduardo Ruiz
 
 ## OTA
 ### How to flash the custom firmware:
@@ -134,22 +132,9 @@ Byte 17 frame packet counter
 0x0e, 0x16, 0x1a, 0x18, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xaa, 0xaa, 0xbb, 0xcc, 0xdd, 0xdd, 0x00
 
 
-## Using custom firmware with ESPHome
-The LYWSD03MMC sensors work directly with ESPHome XiaomiBLE - [xiaomi_lywsd03mmc component](https://esphome.io/components/sensor/xiaomi_ble.html#lywsd03mmc).
-
-Set "Mi like" advertising on custom firmware. The bindkey is not necessary any more as the payload is not encrypted in the custom firmware. However, since the bindkey is a mandatory parameter, you still need to give it a fake one in the config file. It can be anything though, as long as it is formatted like a real one.
-
-Details: https://github.com/esphome/feature-requests/issues/552#issuecomment-688049747
-
 ### Stock firmware:
-Inside this .zip can be found the stock firmware to go back
-https://github.com/custom-components/sensor.mitemp_bt/files/4022697/d4135e135443ba86e403ecb2af2bf0af_upd_miaomiaoce.sensor_ht.t2.zip
+Flash file LYWSD03MMC_stock_firmware.bin
 
-### Building manual for docker:
-https://github.com/AlmightyFrog/BuildEnvironmentATCMiThermometer
+#### All credits go to the author of this tool:
 
-#### Many thanks to:
-
-@danielkucera https://github.com/danielkucera/mi-standardauth/blob/master/provision.py
-
-@romanhosek https://twitter.com/romanhosek https://github.com/hosek
+@atc1441 https://github.com/atc1441/ATC_MiThermometer
