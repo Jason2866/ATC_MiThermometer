@@ -16,7 +16,7 @@ The web flasher does work for many devices that uses the Telink TLSR82** MCUs an
 ## OTA
 ### How to flash the custom firmware:
 
-Download the ATC_Thermometer_custom.bin file and open the Web Flasher, connect to the Xiaomi thermometer, searching may take a while as it broadcasts not so often for better battery life, after the connection is successful click on Do Activation to Authorize the Connection, while its doing so you can already select the firmware file. Be careful to select the right one as it's not possible to check the firmware further. Then click on start flashing to flash the new firmware to the Thermometer.
+Download the ATC_Thermometer_custom.bin file and open the [Web Flasher](https://jason2866.github.io), connect to the Xiaomi thermometer, searching may take a while as it broadcasts not so often for better battery life, after the connection is successful click on Do Activation to Authorize the Connection, while its doing so you can already select the firmware file. Be careful to select the right one as it's not possible to check the firmware further. Then click on start flashing to flash the new firmware to the Thermometer.
 
 After the flashing is done the device should reboot, if the screen stays off pull the battery out for a short amount of time.
 
