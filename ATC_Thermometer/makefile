@@ -2,7 +2,7 @@ TEL_CHIP := -DCHIP_TYPE=CHIP_TYPE_8258
 
 LIBS :=  -llt_8258
 
-TEL_PATH ?= ../..
+TEL_PATH := ../../ATC_MiThermometer/Telink_825X_SDK/
 
 PROJECT_NAME := ATC_Thermometer
 
@@ -13,17 +13,17 @@ ifneq ($(TEL_PATH)/make/makefile, $(wildcard $(TEL_PATH)/make/makefile))
 $(error "Please check SDK_Path")
 endif
 
-OBJ_SRCS := 
-S_SRCS := 
-ASM_SRCS := 
-C_SRCS := 
-S_UPPER_SRCS := 
-O_SRCS := 
-FLASH_IMAGE := 
-ELFS := 
-OBJS := 
-LST := 
-SIZEDUMMY := 
+OBJ_SRCS :=
+S_SRCS :=
+ASM_SRCS :=
+C_SRCS :=
+S_UPPER_SRCS :=
+O_SRCS :=
+FLASH_IMAGE :=
+ELFS :=
+OBJS :=
+LST :=
+SIZEDUMMY :=
 OUT_DIR :=
 
 GCC_FLAGS := \
@@ -65,7 +65,7 @@ endif
 #include Project makefile
 -include $(PROJECT_PATH)/project.mk
 
-# Add inputs and outputs from these tool invocations to the build variables 
+# Add inputs and outputs from these tool invocations to the build variables
 LST_FILE := $(OUT_PATH)/$(PROJECT_NAME).lst
 BIN_FILE := $(OUT_PATH)/../$(PROJECT_NAME).bin
 ELF_FILE := $(OUT_PATH)/$(PROJECT_NAME).elf
@@ -115,4 +115,4 @@ pre-build:
 secondary-outputs: $(BIN_FILE) $(LST_FILE) $(SIZEDUMMY)
 
 .PHONY: all clean
-.SECONDARY: main-build 
+.SECONDARY: main-build
