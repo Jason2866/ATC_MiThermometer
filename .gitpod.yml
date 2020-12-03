@@ -1,4 +1,4 @@
 tasks:
-  - command: export PATH=$PATH:/opt/tc32/bin && cd Telink_825X_SDK/example/blink && make
+  - command: export PATH=$PATH:/opt/tc32/bin && cd ATC_Thermometer && make
 image:
   file: .gitpod.Dockerfile
