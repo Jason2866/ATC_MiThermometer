@@ -1,4 +1,4 @@
 tasks:
-  - command: git clone https://github.com/Ai-Thinker-Open/Telink_825X_SDK.git && cd Telink_825X_SDK/example/blink && make
+  - command: export PATH=$PATH:/opt/tc32/bin && cd Telink_825X_SDK/example/blink && make
 image:
   file: .gitpod.Dockerfile
